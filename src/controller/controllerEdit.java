@@ -12,12 +12,10 @@ import view.viewUtama;
 public class controllerEdit {
     viewEdit frame;
     interfaceFilm infcFilm;
-    List<Film> list_film;
     
     public controllerEdit(viewEdit frame) {
         this.frame = frame;
         infcFilm = new daoFilm();
-        list_film = infcFilm.getData();
     }
     
     public void tampilkanData(Film film1){

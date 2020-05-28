@@ -13,12 +13,10 @@ public class controllerTambah {
     
     viewTambah frame;
     interfaceFilm infcFilm;
-    List<Film> list_film;
     
     public controllerTambah(viewTambah frame) {
         this.frame = frame;
         infcFilm = new daoFilm();
-        list_film = infcFilm.getData();
     }
     
     public void tambahData(){
